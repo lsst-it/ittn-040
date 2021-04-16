@@ -1,6 +1,6 @@
 \documentclass[PMO,authoryear,toc]{lsstdoc}
 % lsstdoc documentation: https://lsst-texmf.lsst.io/lsstdoc.html
-\input{meta}
+%\input{meta}%
 
 % Package imports go here.
 
@@ -10,19 +10,19 @@
 %\input{aglossary.tex}
 %\makeglossaries
 
-\title{Cameras Fibers}
+\title{Camera Fibers}
 
 % Optional subtitle
 % \setDocSubtitle{A subtitle}
 
 \author{%
-Cristian Silva
+Cristian Silva, Guido Maulen, Diego Tapia
 }
 
 \setDocRef{ITTN-040}
 \setDocUpstreamLocation{\url{https://github.com/lsst-it/ittn-040}}
 
-\date{\vcsDate}
+%\date{\vcsDate}%   <
 
 % Optional: name of the document's curator
 % \setDocCurator{The Curator of this Document}
@@ -36,7 +36,7 @@ The following document details the plan to deploy the fibers that will connect t
 % Fields: VERSION, DATE, DESCRIPTION, OWNER NAME.
 % See LPM-51 for version number policy.
 \setDocChangeRecord{%
-  \addtohist{1}{YYYY-MM-DD}{Unreleased.}{Cristian Silva}
+  \addtohist{1}{2021-04-12}{Unreleased.}{Cristian Silva}
 }
 
 
@@ -47,7 +47,8 @@ The following document details the plan to deploy the fibers that will connect t
 % Frequently for a technote we do not want a title page  uncomment this to remove the title page and changelog.
 % use \mkshorttitle to remove the extra pages
 
-% ADD CONTENT HERE
+\input{introduction.tex}
+\input{technical.tex}
 % You can also use the \input command to include several content files.
 
 \appendix
