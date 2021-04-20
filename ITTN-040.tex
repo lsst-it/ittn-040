@@ -3,7 +3,8 @@
 %\input{meta}%
 
 % Package imports go here.
-
+\usepackage{caption}
+\usepackage{subcaption}
 % Local commands go here.
 
 %If you want glossaries
@@ -23,7 +24,7 @@ Cristian Silva, Guido Maulen, Diego Tapia
 \setDocUpstreamLocation{\url{https://github.com/lsst-it/ittn-040}}
 
 %\date{\vcsDate}%   <
-
+\date {today}
 % Optional: name of the document's curator
 % \setDocCurator{The Curator of this Document}
 
@@ -54,7 +55,7 @@ The following document details the plan to deploy the fibers that will connect t
 \appendix
 % Include all the relevant bib files.
 % https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
-\section{References} \label{sec:bib}
+%\section{References} \label{sec:bib}
 \renewcommand{\refname}{} % Suppress default Bibliography section
 \bibliography{local,lsst,lsst-dm,refs_ads,refs,books}
 
