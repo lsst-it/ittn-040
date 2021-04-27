@@ -5,6 +5,9 @@
 % Package imports go here.
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{fancyhdr}
+\usepackage{parcolumns} % <<<<<<----- Required
+\usepackage{lipsum} % <<<<---- Only needed in the example
 % Local commands go here.
 
 %If you want glossaries
@@ -24,7 +27,7 @@ Cristian Silva, Guido Maulen, Diego Tapia
 \setDocUpstreamLocation{\url{https://github.com/lsst-it/ittn-040}}
 
 %\date{\vcsDate}%   <
-\date {today}
+\date {\today}
 % Optional: name of the document's curator
 % \setDocCurator{The Curator of this Document}
 
@@ -32,10 +35,6 @@ Cristian Silva, Guido Maulen, Diego Tapia
 The following document details the plan to deploy the fibers that will connect the LSSTCam 
 }
 
-% Change history defined here.
-% Order: oldest first.
-% Fields: VERSION, DATE, DESCRIPTION, OWNER NAME.
-% See LPM-51 for version number policy.
 \setDocChangeRecord{%
   \addtohist{1}{2021-04-12}{Unreleased.}{Cristian Silva}
 }
